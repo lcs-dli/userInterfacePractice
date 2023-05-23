@@ -11,7 +11,7 @@ import SwiftUI
 struct userInterfacePracticeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BeethovenView()
         }
     }
 }
