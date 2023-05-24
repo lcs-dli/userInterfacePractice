@@ -10,17 +10,25 @@ import SwiftUI
 struct Template: View {
     let detail: BeethovenProperty
     var body: some View {
-        HStack{
-            VStack{
-                Text(detail.nameOfSong)
-                HStack{
-                    Text(detail.opusNumber)
-                    Text(detail.nicknameOfSong)
+            HStack{
+                VStack{
+                    Text(detail.nameOfSong)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                    HStack{
+                        Text("\(detail.opusNumber) . \"\(detail.nicknameOfSong)\"")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
                 }
+                Spacer()
+                Text(detail.timesPlayed)
+                    .font(.caption)
+                    .foregroundColor(.gray)
+                Image(systemName: "chevron.forward")
+                    .foregroundColor(.gray)
             }
-            Text(detail.timesPlayed)
-            Image(systemName: "chevron.forward")
-        }
+            .padding()
     }
 }
 

@@ -61,7 +61,7 @@ struct BeethovenView: View {
                             .frame(alignment: .leading)
                             .foregroundColor(.gray)
                             .font(.caption)
-                        Text("Beethoven: Symphonies Nos. 4 & 5")
+                        Text("Beethoven: Symphonies \n Nos. 4 & 5")
                         Button(action: {
                             
                         }, label: {
@@ -80,6 +80,7 @@ struct BeethovenView: View {
                     .font(.title)
                     .bold()
                     .padding()
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Group{
                     Template(detail: songs[0])
                     Spacer()
@@ -100,6 +101,33 @@ struct BeethovenView: View {
 }
 struct BeethovenView_Previews: PreviewProvider {
     static var previews: some View {
-        BeethovenView()
+        TabView(selection: Binding.constant(4)){
+            Text("Listen Now")
+                .tabItem{
+                    Image(systemName: "play.circle.fill")
+                    Text("Listen Now")
+                }
+                .tag(1)
+            Text("Browse")
+                .tabItem{
+                    Image(systemName: "squareshape.split.2x2")
+                    Text("Browse")
+                }
+                .tag(2)
+            Text("Library")
+                .tabItem{
+                    Image(systemName: "music.note.house.fill")
+                    Text("Library")
+                }
+                .tag(3)
+            BeethovenView()
+                .tabItem{
+                    Image(systemName: "magnifyingglass")
+                    Text("Search")
+                }
+                .tag(4)
+        }
+        .accentColor(.red)
+        
     }
 }
