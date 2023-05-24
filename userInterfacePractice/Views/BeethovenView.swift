@@ -54,6 +54,7 @@ struct BeethovenView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100)
+                        .cornerRadius(10)
                     
                     VStack{
                         Text("EDITOR'S CHOICE")
@@ -72,10 +73,17 @@ struct BeethovenView: View {
                         .buttonStyle(.borderedProminent)
                     }
                 }
+                .padding()
                 
                 // Popular work
+                Text("Popular Works")
+                    .font(.title)
+                    .bold()
+                    .padding()
                 
+                List{
                     
+                }
                 
             }
             

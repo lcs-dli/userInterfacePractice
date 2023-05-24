@@ -11,6 +11,7 @@
 		491EDD692A1D14CC00392294 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491EDD682A1D14CC00392294 /* Assets.xcassets */; };
 		491EDD6C2A1D14CC00392294 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491EDD6B2A1D14CC00392294 /* Preview Assets.xcassets */; };
 		491EDD742A1D152F00392294 /* BeethovenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EDD732A1D152F00392294 /* BeethovenView.swift */; };
+		49A3CEB92A1D8F120035336D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A3CEB82A1D8F120035336D /* ListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		491EDD682A1D14CC00392294 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491EDD6B2A1D14CC00392294 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		491EDD732A1D152F00392294 /* BeethovenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeethovenView.swift; sourceTree = "<group>"; };
+		49A3CEB82A1D8F120035336D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				491EDD732A1D152F00392294 /* BeethovenView.swift */,
+				49A3CEB82A1D8F120035336D /* ListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			files = (
 				491EDD652A1D14CA00392294 /* userInterfacePracticeApp.swift in Sources */,
 				491EDD742A1D152F00392294 /* BeethovenView.swift in Sources */,
+				49A3CEB92A1D8F120035336D /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
