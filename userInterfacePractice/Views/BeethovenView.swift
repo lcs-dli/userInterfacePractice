@@ -80,10 +80,17 @@ struct BeethovenView: View {
                     .font(.title)
                     .bold()
                     .padding()
-                
-                List{
-                    
+                Group{
+                    Template(detail: songs[0])
+                    Spacer()
+                    Template(detail: songs[1])
+                    Spacer()
+                    Template(detail: songs[2])
+                    Spacer()
                 }
+                
+                
+               
                 
             }
             
